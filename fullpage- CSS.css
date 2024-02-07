@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.vfrc-widget {
+
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+  inset: initial;
+
+}
+
+.vfrc-widget--launcher {
+
+  display: none !important;
+
+}
+
+.vfrc-widget--chat {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.vfrc-header--button {
+
+  display: none !important;
+
+}
+
+.vfrc-footer {
+
+  border-top: 2px solid var(--shadows-shadow4);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+}
+/* Example to target chat bubbles specifically */
+.vfrc-message {
+  max-width: 100%; /* Allows bubbles to expand more */
+  width: auto; /* Adjusts width based on content up to max-width */
+}
+
+/* If there are specific classes for user and bot messages, you can target them individually */
+.vfrc-user-message, .vfrc-bot-message {
+  max-width: 100%; /* Ensure messages use the available space */
+  width: auto; /* Adjust width dynamically */
+}
