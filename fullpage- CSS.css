@@ -40,12 +40,16 @@ html, body {
   border-top-right-radius: 0;
 }
 
-/* Customizing assistant messages */
+/* Assistant messages should occupy more width */
 .vfrc-system-response .vfrc-message {
-    min-width: 60% !important; /* Ensure messages occupy at least 60% width */
-    width: auto !important; /* Allows width to adjust based on content */
-    display: block !important; /* Ensures proper display */
-    margin-left: auto !important;
-    margin-right: auto !important; /* Centers the message if it's less than 100% width */
-    font-size: 1em !important; /* Adjusts font size for readability, customize as needed */
+    min-width: 60% !important; /* Minimum width */
+    max-width: 80% !important; /* Maximum width to allow some space on the sides */
+    margin: 0 auto !important; /* Center the message bubble */
+}
+
+/* If you want to apply styles to both user and assistant messages */
+.vfrc-message {
+    min-width: 60% !important; /* Minimum width */
+    max-width: 80% !important; /* Maximum width to allow some space on the sides */
+    margin: 0 auto !important; /* Center the message bubble */
 }
