@@ -47,3 +47,7 @@ html, body {
   border-top-right-radius: 0;
 
 }
+/* Ensuring assistant messages take up at least 60% of the chat widget's width */
+.vfrc-system-response .vfrc-message {
+    min-width: 60% !important;
+}
