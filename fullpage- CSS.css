@@ -7,18 +7,14 @@ html, body {
 }
 
 .vfrc-widget {
-
   position: relative !important;
   width: 100%;
   height: 100%;
   inset: initial;
-
 }
 
 .vfrc-widget--launcher {
-
   display: none !important;
-
 }
 
 .vfrc-widget--chat {
@@ -35,19 +31,21 @@ html, body {
 }
 
 .vfrc-header--button {
-
   display: none !important;
-
 }
 
 .vfrc-footer {
-
   border-top: 2px solid var(--shadows-shadow4);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-
 }
-/* Ensuring assistant messages take up at least 60% of the chat widget's width */
+
+/* Customizing assistant messages */
 .vfrc-system-response .vfrc-message {
-    min-width: 60% !important;
+    min-width: 60% !important; /* Ensure messages occupy at least 60% width */
+    width: auto !important; /* Allows width to adjust based on content */
+    display: block !important; /* Ensures proper display */
+    margin-left: auto !important;
+    margin-right: auto !important; /* Centers the message if it's less than 100% width */
+    font-size: 1em !important; /* Adjusts font size for readability, customize as needed */
 }
