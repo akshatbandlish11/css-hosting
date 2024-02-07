@@ -47,14 +47,3 @@ html, body {
   border-top-right-radius: 0;
 
 }
-/* Example to target chat bubbles specifically */
-.vfrc-message {
-  max-width: 100%; /* Allows bubbles to expand more */
-  width: auto; /* Adjusts width based on content up to max-width */
-}
-
-/* If there are specific classes for user and bot messages, you can target them individually */
-.vfrc-user-message, .vfrc-bot-message {
-  max-width: 100%; /* Ensure messages use the available space */
-  width: auto; /* Adjust width dynamically */
-}
