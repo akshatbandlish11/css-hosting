@@ -42,14 +42,14 @@ html, body {
 
 /* Assistant messages should occupy more width */
 .vfrc-system-response .vfrc-message {
-    min-width: 100% !important; /* Minimum width */
-    max-width: 100% !important; /* Maximum width to allow some space on the sides */
-    margin: 0 auto !important; /* Center the message bubble */
+    min-width: 80% !important; /* Minimum width */
+    max-width: 80% !important; /* Maximum width to allow some space on the sides */
+    margin: 10 auto !important; /* Center the message bubble */
 }
 
 /* If you want to apply styles to both user and assistant messages */
 .vfrc-message {
-    min-width: 30% !important; /* Minimum width */
-    max-width: 30% !important; /* Maximum width to allow some space on the sides */
-    margin: 0 auto !important; /* Center the message bubble */
+    min-width: 40% !important; /* Minimum width */
+    max-width: 40% !important; /* Maximum width to allow some space on the sides */
+    margin: 10 auto !important; /* Center the message bubble */
 }
