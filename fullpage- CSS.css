@@ -11,6 +11,7 @@ html, body {
   width: 100%;
   height: 100%;
   inset: initial;
+  overflow: auto; /* Allows scrolling within the widget if content overflows */
 }
 
 .vfrc-widget--launcher {
@@ -28,6 +29,7 @@ html, body {
   border: none !important;
   max-width: none !important;
   max-height: none !important;
+  overflow-y: auto; /* Allows vertical scrolling if the content overflows */
 }
 
 .vfrc-header--button {
@@ -42,14 +44,20 @@ html, body {
 
 /* Assistant messages should occupy more width */
 .vfrc-system-response .vfrc-message {
-    min-width: 100% !important; /* Minimum width */
-    max-width: 100% !important; /* Maximum width to allow some space on the sides */
-    margin: 10 auto !important; /* Center the message bubble */
+  min-width: 100% !important; /* Minimum width */
+  max-width: 100% !important; /* Maximum width to allow some space on the sides */
+  margin: 10 auto !important; /* Center the message bubble */
+  word-wrap: break-word !important; /* Prevents long words from overflowing */
+  box-sizing: border-box !important; /* Include padding and borders in the width */
 }
 
 /* If you want to apply styles to both user and assistant messages */
 .vfrc-message {
-    min-width: 40% !important; /* Minimum width */
-    max-width: 40% !important; /* Maximum width to allow some space on the sides */
-    margin: 10 auto !important; /* Center the message bubble */
+  min-width: 40% !important; /* Minimum width */
+  max-width: 40% !important; /* Maximum width to allow some space on the sides */
+  margin: 10 auto !important; /* Center the message bubble */
+  word-wrap: break-word !important; /* Prevents long words from overflowing */
+  box-sizing: border-box !important; /* Include padding and borders in the width */
+  display: block !important; /* Ensure that the message is a block element */
+  line-height: 1.5 !important; /* Adjust as needed for vertical centering */
 }
