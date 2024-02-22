@@ -57,8 +57,8 @@ html, body {
 
 /* If you want to apply styles to both user and assistant messages */
 .vfrc-message {
-  min-width: 40% !important; /* Minimum width */
-  max-width: 40% !important; /* Maximum width to allow some space on the sides */
+  min-width: 0% !important; /* Minimum width */
+  max-width: 100% !important; /* Maximum width to allow some space on the sides */
   margin: 10 auto !important; /* Center the message bubble */
   word-wrap: break-word !important; /* Prevents long words from overflowing */
   box-sizing: border-box !important; /* Include padding and borders in the width */
