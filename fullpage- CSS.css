@@ -18,6 +18,10 @@ html, body {
   display: none !important;
 }
 
+.c-kedLSQ {
+    flex-shrink: 1 !important;
+}
+
 .vfrc-widget--chat {
   position: fixed !important;
   top: 0 !important;
